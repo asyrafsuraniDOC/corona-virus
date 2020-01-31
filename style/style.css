@@ -146,18 +146,21 @@ body {
     margin-top: 15px;
 }
 
-.ask-question-btn-position{
+/* .ask-question-btn-position{
     text-align: center;
     margin: 50px 0;
-}
+} */
 
 .ask-question-btn{
     background-color: #128CE8;
     border-radius: 4px;
-    color: #fff;
-    padding: 15px 10px;
+    color: #fff;    
+    display: block;    
+    margin: 50px auto;
+    padding: 15px 10px;    
+    text-align: center;
     text-decoration: none;
-    width: 40%;
+    width: max-content;
 
 }
 
