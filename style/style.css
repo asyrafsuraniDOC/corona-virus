@@ -170,9 +170,9 @@ body {
     column-count: 3;
     /* column-gap: 1em; */
     margin-top: 15px;
-  }
+}
 
-  .panic-content1 {
+.panic-content1 {
     padding: 10px;
     /* height: auto; */
     background: #fff;
@@ -181,13 +181,13 @@ body {
     display: inline-block;
     margin: 0 0 1em;
     width: 100%;
-  }
+}
 
-  @media(max-width:576px){
+@media(max-width:576px){
     .column-card {
         column-count: 1;
-      }
-  }
+    }
+}
 
 
 /* Load More Style CSS from https://webdevtrick.com/load-more-feature-with-html-css/ */
