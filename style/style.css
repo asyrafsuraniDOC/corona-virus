@@ -1,0 +1,245 @@
+body {
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0;
+}
+
+.mobile-only{
+    display: none;
+}  
+
+.desktop-only{
+    display: block;
+}
+
+@media (max-width: 575px){
+    .mobile-only{
+        display: block;
+    }  
+    .desktop-only{
+        display: none;
+    }   
+}
+
+.novel-coronavirus-text{
+    font-size: 40px;
+    margin: 25px 0;
+}
+
+.novel-coronavirus-desc-text{
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+
+.read-more-link{
+    color: #41c0f1;
+    text-decoration: none;
+}
+
+@media(max-width:576px){
+    .novel-coronavirus-text{
+        font-size: 24px;
+    }
+
+    .novel-coronavirus-desc-text{
+        margin-bottom: 20px;
+    }
+}
+
+.corona-virus-image-1{
+    background-image: url('./images/corona-virus-image-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 304px;
+    width: auto;
+}
+
+.coronavirus-sub-img{
+    border-radius: 4px;
+    width: 100%;
+}
+
+.description-subtext{
+    font-weight: bold;
+    line-height: 23px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.consult-now-bg{
+    background-color: #484848;
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.consult-now-text{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.consult-now-subtext{
+    color: #fff;
+    line-height: 23px;
+}
+
+.consult-now-display-btn{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.consult-now-btn{
+    background-color: #128CE8;
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px 10px;
+    text-decoration: none;    
+    text-align: center;
+    width: 40%;
+}
+
+.try-answer-question-text{
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.answer-question-bg{
+    background-color: #EDEDED;
+    padding: 15px;
+}
+
+.answer-question-col{
+    border: 1px solid #CCCCCC;
+    background-color: #fff;
+    max-width: 31.333333%;;
+    margin: 0 1%;
+    padding: 10px;
+}
+
+.answer-question-d-flex{
+    display: flex;
+    font-weight: bold;
+}
+
+.answer-question-icon-img{
+    height: 44px;
+    margin-right: 10px;
+    width: 44px;
+}
+
+.answer-question-subtext{
+    line-height: 23px;
+    margin-top: 15px;
+}
+
+.ask-question-btn{
+    background-color: #128CE8;
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px 10px;
+    text-decoration: none;    
+    text-align: center;
+    width: 40%;
+
+}
+
+.load-more-text-display{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.column-card {
+    column-count: 3;
+    /* column-gap: 1em; */
+    margin-top: 15px;
+  }
+
+  .panic-content1 {
+    padding: 10px;
+    /* height: auto; */
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+  }
+
+  @media(max-width:576px){
+    .column-card {
+        column-count: 1;
+      }
+  }
+
+
+/* Load More Style CSS from https://webdevtrick.com/load-more-feature-with-html-css/ */
+/* .load-more-container {
+    background: #fff;
+    width: 500px;
+    min-height: 500px;
+    margin: 20px auto;
+    position: relative;
+  } */
+  /* .load-more-container ul {
+    list-style-type: none;
+    padding: 0;
+  } */
+
+
+  /* .load-more-container .load-more-content:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  /* .load-more-container .load-more-content .panic-content {
+    width: calc(25% - 10px);
+    margin: 10px 5px;
+    padding: 10px;
+    height: auto;
+    background: #fff;
+    float: left;
+    border-radius: 2px;
+    border: 1px solid #CCCCCC;
+  } */
+  .load-more-container .column-card .panic-content1:nth-child(1n + 7) {
+    max-height: 0;
+    opacity: 0;
+    transition: 0.1s ease-in;
+  }
+  .load-more-container .load-more-btn {
+    width: 150px;
+    line-height: 40px;
+    border-radius: 2px;
+    margin: 0 auto;
+    display: block;
+    background:   #494747;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .load-more-container .load-more-btn:hover {
+    background: #333;
+  }
+  .load-more-container .load-more-btn .loaded {
+    display: none;
+  }
+  .load-more-container #load-more {
+    display: none;
+  }
+  .load-more-container #load-more:checked ~ .column-card .panic-content1:nth-child(1n + 7) {
+    max-height: 999px;
+    opacity: 1;
+    transition: 0.2s ease-in;
+  }
+  .load-more-container #load-more:checked ~ .load-more-btn .loaded {
+    display: block;
+  }
+  .load-more-container #load-more:checked ~ .load-more-btn .unloaded {
+    display: none;
+  }
+
+
+  
